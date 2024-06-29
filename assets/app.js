@@ -6,14 +6,18 @@ import './styles/app.css';
 import './js/color-modes'
 
 
-document.addEventListener('DOMContentLoaded', function() {
-    var btn = document.querySelector('.btn');
+let btnRed = document.querySelector('.btnRed');
+let btnBlue = document.querySelector('.btnBlue');
+let myButton = document.querySelector('.btn');
 
-    btn.addEventListener('click', () => {
-        btn.style.backgroundColor = '#ffac09';
-        btn.style.boxShadow = '0 0 40px #ffac09';
-        btn.style.transition = '.5s ease';
-    });
+btnRed.addEventListener('click', () => { 
+    myButton.classList.remove('yellow');
+    myButton.classList.add('red');
 });
 
-console.log("Ceci est un test du fonctionnement de javascript configurer sur bootstrap");
+btnBlue.addEventListener('click', () => { 
+    myButton.classList.remove('red');
+    myButton.classList.add('yellow');
+});
+
+console.log("AUTRES CHOSES");
