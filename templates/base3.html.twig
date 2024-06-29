@@ -6,25 +6,19 @@
         <!-- ... -->
 
         {% block stylesheets %}
-            {#<link rel="stylesheet" href="{{ asset('vendor/bootstrap/css/bootstrap.min.css') }}">#}
-            <link rel="stylesheet" href="{{ asset('styles/dashboard.css') }}">
-            {#<link rel="stylesheet" href="{{ asset('vendor/fontawesome/css/font-awesome.min.css') }}">}#}
+            {#<link rel="stylesheet" href="{{ asset('build/app.css') }}">#}
+            {{ encore_entry_link_tags('app') }}
+            
         {% endblock %}
 
-        {#{% block javascripts %}
+        {% block javascripts %}
+            {#<script scr="{{ asset('styles/build/app.js') }}"></script>#}
             {{ encore_entry_script_tags('app') }}
-
-            <!-- Renders app.js & a webpack runtime.js file
-                <script src="/build/runtime.js" defer></script>
-                <script src="/build/app.js" defer></script>
-                See note below about the "defer" attribute -->
-                <script src="/build/app.js" defer></script>
-        {% endblock %} #}
+        {% endblock %}
     </head>
 
-    <!-- ... -->
 
     <body>
         <button class="btn">Button</button>
-    </bady>
+    </body>
 </html>

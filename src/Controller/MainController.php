@@ -8,7 +8,7 @@ use Symfony\Component\Routing\Attribute\Route;
 
 class MainController extends AbstractController
 {
-    #[Route('/index1', name: 'index1')]
+    /*#[Route('/index1', name: 'index1')]
     public function index1(): Response
     {
         return $this->render('base1.html.twig');
@@ -19,7 +19,7 @@ class MainController extends AbstractController
     public function index2(): Response
     {
         return $this->render('base2.html.twig');
-    }
+    }*/
 
     #[Route('/index3', name: 'index3')]
     public function index3(): Response
