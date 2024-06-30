@@ -1,5 +1,7 @@
 twig:
     file_name_pattern: '*.twig'
+    globals:
+        nom: 'MY NAME IS ALADE, WELECOME HERE!!!'
 
 when@test:
     twig:

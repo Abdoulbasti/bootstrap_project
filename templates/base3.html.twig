@@ -19,10 +19,25 @@
 
 
     <body>
-        <div>
-            <button class="btnRed">Red</button>
-            <button class="btnBlue">Yellow</button>
-            <button class="btn yellow">My Button</button>
-        </div>
+    <header>
+        <h1>{% block header %}En-tête par défaut{% endblock %}</h1>
+    </header>
+    <main>
+        {% block content %} Ceci est un contenue{% endblock %}
+    </main>
+    <footer>
+        {% block footer %}Pied de page par défaut{% endblock %}
+    </footer>
+
+
+    <div>
+        <button class="btnRed">Red</button>
+        <button class="btnBlue">Yellow</button>
+        <button class="btn yellow">My Button</button> 
+    </div></br></br></br></br>
+
+    {% for i in 0..(10-1) %}
+        <p>Paragraphe numéro {{ i }}  et : {{nom}}</p>
+    {% endfor %}
     </body>
 </html>
