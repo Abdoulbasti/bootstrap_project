@@ -2,9 +2,15 @@ import './bootstrap';
 //import './styles/app.scss';
 //Add bootstrapp libries
 import * as bootstrap from 'bootstrap';
+import './styles/app.scss';
 import './styles/app.css';
-import './js/color-modes'
+import './js/color-modes';
 import './js/dashboard';
+
+
+$(document).ready(function() {
+    $('[data-toggle="popover"]').popover();
+});
 
 /*let btnRed = document.querySelector('.btnRed');
 let btnBlue = document.querySelector('.btnBlue');
@@ -19,13 +25,3 @@ btnBlue.addEventListener('click', () => {
     myButton.classList.remove('red');
     myButton.classList.add('yellow');
 });*/
-/* global bootstrap: false */
-(() => {
-    'use strict'
-    const tooltipTriggerList = Array.from(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-    tooltipTriggerList.forEach(tooltipTriggerEl => {
-        new bootstrap.Tooltip(tooltipTriggerEl)
-    })
-})()
-
-console.log("AUTRES CHOSES");
