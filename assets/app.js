@@ -7,6 +7,7 @@ import './styles/app.css';
 import './js/color-modes';
 import './js/dashboard';
 
+console.log("TEST FONCTIONNEMENT JS");
 
 $(document).ready(function() {
     $('[data-toggle="popover"]').popover();
@@ -32,5 +33,4 @@ mybtn.addEventListener('click', () => {
     mybtn.style.boxShadow = '0 0 40px #ffac09';
     mybtn.style.transition = '.5s ease';
 });
-
 console.log("TEST FONCTIONNEMENT JS");
