@@ -16,6 +16,7 @@
             {{ encore_entry_script_tags('app') }}
         {% endblock %}
     </head>
+    
 
 
     <body>
@@ -30,14 +31,10 @@
     </footer>
 
 
-    <div>
-        <button class="btnRed">Red</button>
-        <button class="btnBlue">Yellow</button>
-        <button class="btn yellow">My Button</button> 
-    </div></br></br></br></br>
+    <button class="btn">Button</button>
 
-    {% for i in 0..(10-1) %}
+    {#{% for i in 0..(10-1) %}
         <p>Paragraphe numéro {{ i }}  et : {{nom}}</p>
-    {% endfor %}
+    {% endfor %}#}
     </body>
 </html>

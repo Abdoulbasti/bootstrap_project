@@ -25,3 +25,12 @@ btnBlue.addEventListener('click', () => {
     myButton.classList.remove('red');
     myButton.classList.add('yellow');
 });*/
+
+const mybtn = document.querySelector('.mybtn');
+mybtn.addEventListener('click', () => {
+    mybtn.style.backgroundColor = '#ffac09';
+    mybtn.style.boxShadow = '0 0 40px #ffac09';
+    mybtn.style.transition = '.5s ease';
+});
+
+console.log("TEST FONCTIONNEMENT JS");
