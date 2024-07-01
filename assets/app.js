@@ -4,7 +4,7 @@ import './bootstrap';
 import * as bootstrap from 'bootstrap';
 import './styles/app.css';
 import './js/color-modes'
-import './dashboard';
+import './js/dashboard';
 
 /*let btnRed = document.querySelector('.btnRed');
 let btnBlue = document.querySelector('.btnBlue');
